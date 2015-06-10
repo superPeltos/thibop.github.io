@@ -1,0 +1,183 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+@media screen and (max-width: 680px) {
+	/*HEADER*/
+	/*logo*/
+	.logo img {
+	  max-width: 130px;
+	  max-width: 90px;
+	}
+	/*NAV*/
+	/*membre*/
+	nav#menu--member {
+	  float: right;
+	}
+	/*main*/
+	.main-mobile{
+	  float: right;
+	  text-align: center;
+	  border: 6px solid #181E4B;
+	  padding: 0px 13px;
+	  color:#181E4B;
+	}
+	.main-mobile span{
+		font-size: 60px;
+	}
+	#menu--main ul li {
+	 font-family: 'Montserrat', sans-serif;;
+	  font-family: arial;
+	  margin: 0px 9px;
+	}
+	nav#menu--main {
+	  position: absolute;
+	  right: 30px;
+	  top: 90px;
+	}
+	/*CONTENT*/
+	.home--header--contain{
+		background-image:url("ressource/background-header-home-mobile.jpg");
+		height:530px;
+	}
+	.home--header--title {
+	  display: inline-block;
+	  position: relative;
+	  top: 455px;
+	  width: 100%;
+	  color:white;
+	    text-align: center;
+	}
+	.home--header--title h1{
+		margin: 0px 20px;
+	}
+	.home--header--title h1,
+	.home--header--title span{
+		display: inline-block;
+	}
+	/*VOYAGE TABLEAUX*/
+	.home--voyage--contain {
+  		max-width: 95%;
+  		background: rgb(24, 30, 75);
+  		margin: 0 auto;
+	}
+	.home--voyage--contain ul{
+		padding: 0px;
+		
+	}
+	.home--voyage--contain ul li{
+		list-style-type:none;
+		border-top:1px solid white;
+	}
+	.home--voyage--contain ul li a{
+  		color:white;
+  		border-top:1px white;
+  		text-decoration: none;
+  		margin : 10px 5px;
+  		vertical-align: middle;
+	}
+	.home--voyage--contain ul li a span{
+		display: block
+	}
+	/*TEMOIGNAGE*/
+	.home--testi--contain div img {
+ 	 	display: block;
+ 	 	margin: auto;
+ 	 	margin-top: 60px;
+	}
+	.testi--text::after,
+	.testi--text::before{
+		content:"";
+		position:absolute;
+		font-size: 70px;
+		font-family: sans-serif;
+		color:#7bdbdb;
+
+	}
+	.testi--text::before{
+		background-image: url(ressource/apostrophe_before.jpg);
+		left: -40px;
+  		top: -30px;
+  		  height: 26px;
+  width: 40px;
+	}
+	.testi--text::after{
+	background-image: url(ressource/apostrophe_after.jpg);
+	top: 163px;
+	right: -44px;
+	height: 26px;
+	width: 40px;
+	}
+ 	.testi--text {
+ 		max-width: 38%;
+ 		min-width: 30%;
+  		text-align: justify;
+  		margin: auto;
+  		position: relative;
+  		margin-top: 45px;
+ 	}
+	.testi--text span{
+		display: block;
+	}
+	.testi--text a.mobile{
+		color:white;
+		background:#181E4B;
+		padding:5px;
+		font-transform:uppercase;
+		text-decoration: none;
+	}
+	/*display none*/
+	.home--header--list,
+	.home--voyage--contain ul li a span.home--header--link{
+		display:none;
+	}
+
+	/*FOOTER*/
+	#menu--footer--member{
+		background:#181E4B;
+		margin-top: -16px;
+	}
+	#menu--footer--member li{
+		color: white;
+  		text-decoration: none;
+  		padding:10px 0px 10px 0px;
+  		list-style: none;
+
+	}
+	  
+	/* CLASSE MOBILE */
+	body.body-mobile {
+	  max-width: 680px;
+	   margin: 0px 0px 0px 0px;
+	}
+}
+/*SVG*/
+.home--voyage--contain ul li a span.contain-picto-svg{
+	display: inline-block;
+	width:20px;
+	margin:10px 25px;
+}
+#Calendar,
+#Airplane_Flight{
+	fill:#7bdbdb;
+}
+/*UTILITY*/
+.clear {
+	clear:both;
+}
+
+/*SOCIAL*/
+.home--social--contain{
+	background:#7BDBDA;
+	margin:45px 0px 0px 0px;
+	padding:25px 0px 25px 0px;
+}
+.home--social--contain div{
+	text-align: center;
+}
+.home--social--contain div img{
+	display: inline-block;
+	margin:0px 25px 0px 25px;
+	  height: 50px;
+}
