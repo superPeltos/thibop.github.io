@@ -1,0 +1,22 @@
+{
+  "name": "lpatc_site_responsive",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thibop/Lpatc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thibop/Lpatc/issues"
+  },
+  "homepage": "https://github.com/thibop/Lpatc#readme",
+  "description": "",
+  "dependencies": {
+    "jquery": "^2.1.4"
+  }
+}

@@ -21,16 +21,24 @@
 			<a href="index.php"><img src="ressource/logo.png" alt="C'est le logo" title="Retour home"></a>
 		</div>
 	
-		<nav id="menu--main">
-			<div class="main-mobile"><span id="JS-main-mobile">+</span></div>
-			<ul id="main--nav">
-				<li>Nous</li>
-				<li>Vous</li>
-				<li>Apéritifs</li>
-				<li>Actualité</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
+		
+		<div class="main-mobile"><span id="JS-main-mobile">+</span></div>
+		<div class="contain--navmobile">
+			<nav id="menu--main">
+				<ul id="main--nav">
+					<li><a href="">Nous</a></li>
+					<li><a href="">Vous</a></li>
+					<li><a href="">Apéritifs</a></li>
+					<li><a href="">Actualité</a></li>
+					<li><a href="">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="main--nav--second">
+				<h2>Résevation</h2>
+				<p>0(+33) 3 88 88 88 <p>
+				<a>Formulaire de reservation</a>
+			</div>
+		</div>
 		<div class="clear"></div>		
 
 	</header>

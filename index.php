@@ -44,6 +44,7 @@
 	</div>
 </div>
 <div class="home--voyage--contain">
+	<h1>Prochains voyages</h1>
 	<div>
 		<ul>
 			<li><a href="voyage.php">				
@@ -131,6 +132,7 @@
 	</div>
 </div>
 <div class="home--testi--contain">
+	<h1>Témoignage</h1>
 	<div>
 		<img src="ressource/portrait--testi.png" alt="#portrait du témoignage" title="#portrait du témoignage">
 			<div class="testi--text">

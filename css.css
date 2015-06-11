@@ -16,6 +16,22 @@ body{
 	  float: right;
 	}
 	/*main*/
+	#main--nav li a {
+	  font-size: 30px;
+	  text-decoration: none;
+	  line-height: 60px;
+	  color: #181E4B;
+	}
+	.contain--navmobile{
+		position: absolute;
+	    top: 165px;
+	    width:100%;
+	}
+	nav#menu--main {
+	  width: 49%;
+	  background-color: white;
+	  display: inline-block;
+	}
 	.main-mobile{
 	  float: right;
 	  text-align: center;
@@ -23,6 +39,17 @@ body{
 	  padding: 0px 13px;
 	  color:#181E4B;
 	}
+	.main-mobile {
+	  /* float: right; */
+	  text-align: center;
+	  border: 6px solid #181E4B;
+	  padding: 0px 13px;
+	  color: #181E4B;
+	  position: absolute;
+	  right: 0px;
+	  top: 81px;
+	}
+
 	.main-mobile span{
 		font-size: 60px;
 	}
@@ -31,10 +58,12 @@ body{
 	  font-family: arial;
 	  margin: 0px 9px;
 	}
-	nav#menu--main {
-	  position: absolute;
-	  right: 30px;
-	  top: 90px;
+	/*second*/
+	.main--nav--second{
+		display: inline-block;
+  		background-color: white;
+  		width: 49%;
+  		vertical-align: top;
 	}
 	/*CONTENT*/
 	.home--header--contain{
@@ -57,6 +86,10 @@ body{
 		display: inline-block;
 	}
 	/*VOYAGE TABLEAUX*/
+	.home--voyage--contain h1 {
+		color: white;
+		padding: 12px 0px 0px 50px;
+	}
 	.home--voyage--contain {
   		max-width: 95%;
   		background: rgb(24, 30, 75);
@@ -76,11 +109,18 @@ body{
   		text-decoration: none;
   		margin : 10px 5px;
   		vertical-align: middle;
+  		height: 100%;
+  		display: block;
 	}
 	.home--voyage--contain ul li a span{
-		display: block
+		display: block;
+		font-size:35px;
 	}
 	/*TEMOIGNAGE*/
+	.home--testi--contain h1{
+		color:#181E4B;
+		  margin-left: 13px;
+	}
 	.home--testi--contain div img {
  	 	display: block;
  	 	margin: auto;
@@ -155,8 +195,8 @@ body{
 /*SVG*/
 .home--voyage--contain ul li a span.contain-picto-svg{
 	display: inline-block;
-	width:20px;
-	margin:10px 25px;
+	width:35px;
+	margin:10px 25px 5px 50px;
 }
 #Calendar,
 #Airplane_Flight{
