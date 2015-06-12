@@ -5,7 +5,8 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="css.css">
-  <script src="script.js"></script>
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="js/test.js"></script>
 </head>
 <body class="body-mobile">
 	<header>
@@ -26,17 +27,28 @@
 		<div class="contain--navmobile">
 			<nav id="menu--main">
 				<ul id="main--nav">
-					<li><a href="">Nous</a></li>
+					<li><a class="second--parent">Nous</a></li>
 					<li><a href="">Vous</a></li>
 					<li><a href="">Apéritifs</a></li>
 					<li><a href="">Actualité</a></li>
 					<li><a href="">Contact</a></li>
 				</ul>
 			</nav>
+
 			<div class="main--nav--second">
-				<h2>Résevation</h2>
-				<p>0(+33) 3 88 88 88 <p>
-				<a>Formulaire de reservation</a>
+				<div class="JS-nomenu">
+					<h2>Résevation</h2>
+					<img src="ressource/phone_white.png" alt="picto telephone">
+					<p>0(+33) 3 88 88 88 <p>
+					<a>Formulaire de reservation</a>
+				</div>
+				<div class="JS-menu">
+					<ul class="">
+						<li>Présentation</li>
+						<li>Équipe</li>
+						<li>Engagement</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<div class="clear"></div>		

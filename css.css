@@ -16,6 +16,16 @@ body{
 	  float: right;
 	}
 	/*main*/
+	.JS-menu{
+		display:none;
+		text-align: left;
+	}
+	.JS-menu ul li{
+		font-size:25px;
+		text-decoration: none;
+	  line-height: 60px;
+	  color: #181E4B;
+	} 
 	#main--nav li a {
 	  font-size: 30px;
 	  text-decoration: none;
@@ -26,6 +36,7 @@ body{
 		position: absolute;
 	    top: 165px;
 	    width:100%;
+	    display:none;
 	}
 	nav#menu--main {
 	  width: 49%;
@@ -52,20 +63,36 @@ body{
 
 	.main-mobile span{
 		font-size: 60px;
+		width: 55%;
 	}
+	.JS-menu ul li,
 	#menu--main ul li {
 	 font-family: 'Montserrat', sans-serif;;
-	  font-family: arial;
-	  margin: 0px 9px;
+font-family: arial;
+  margin: 0px -27px;
+  list-style: none;
+  text-transform: uppercase;
 	}
 	/*second*/
+	.contain-second{
+
+	}
 	.main--nav--second{
 		display: inline-block;
   		background-color: white;
   		width: 49%;
   		vertical-align: top;
+  		text-align: center;
+	}
+	.menu {
+	  text-align: left;
+	}
+	.main--nav--second img{
+		background:#181E4B;
+		padding:10px;
 	}
 	/*CONTENT*/
+	/*home*/
 	.home--header--contain{
 		background-image:url("ressource/background-header-home-mobile.jpg");
 		height:530px;
@@ -90,6 +117,7 @@ body{
 		color: white;
 		padding: 12px 0px 0px 50px;
 	}
+	.aboutus--team--contain,
 	.home--voyage--contain {
   		max-width: 95%;
   		background: rgb(24, 30, 75);
@@ -172,7 +200,44 @@ body{
 	.home--voyage--contain ul li a span.home--header--link{
 		display:none;
 	}
-
+	/*aboutus*/
+	.aboutus--header--contain{
+		background-image:url("ressource/aboutus.png");
+		height:530px;
+	}
+	.aboutus--header--title {
+	  display: inline-block;
+	  position: relative;
+	  top: 455px;
+	  width: 100%;
+	  color:white;
+	    text-align: center;
+	}
+	.aboutus--header--title h1{
+		margin: 0px 20px;
+	}
+	.aboutus--header--title h1,
+	.aboutus--header--title span{
+		display: inline-block;
+	}
+	.aboutus--team--contain {
+  		max-width: 100%;
+  		background: rgb(24, 30, 75);
+  		margin: 0 auto;
+	}
+	.aboutus--team--contain{
+		margin:25px 0px;
+	}
+	.aboutus--team--contain h1 {
+	  color: white;
+	  padding: 12px 0px 0px 12px;
+	  margin:0px;
+	}
+	.aboutus--team--contain p {
+	  color: white;
+	  padding: 12px 0px 12px 12px;
+	  margin:0px;
+	}
 	/*FOOTER*/
 	#menu--footer--member{
 		background:#181E4B;
@@ -183,7 +248,9 @@ body{
   		text-decoration: none;
   		padding:10px 0px 10px 0px;
   		list-style: none;
-
+  		font-size: 30px;
+  		line-height: 60px;
+  		text-transform: uppercase;
 	}
 	  
 	/* CLASSE MOBILE */
