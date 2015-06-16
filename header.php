@@ -5,8 +5,11 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Titre de la page</title>
   <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="js/woothemes-FlexSlider-8ed61ac/flexslider.css">
   <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="js/woothemes-FlexSlider-8ed61ac/jquery.flexslider-min.js"></script>
   <script src="js/test.js"></script>
+  <script src="js/slider.js"></script>
 </head>
 <body class="body-mobile">
 	<header>
@@ -32,6 +35,7 @@
 					<li><a href="">Apéritifs</a></li>
 					<li><a href="">Actualité</a></li>
 					<li><a href="">Contact</a></li>
+					<p>0(+33) 3 88 88 88 <p>
 				</ul>
 			</nav>
 

@@ -3,12 +3,26 @@
 ?>
 <!-- CONTENT -->
 <div class="home--header--contain">
-	<div class="home--header--title">
-		<span><</span>
-		<h1>Slide 1</h1>
-		<span>></span>
-	</div>
+			<div class="flexslider">
+		  <ul class="slides">
+		    <li>
+		    	<div class="home--header--title">
+				<h1>Voyage 1</h1>
+			</div>
+		      <img src="ressource/desktop.jpg" 
+		      />
+		    </li>
+		    <li>
+		      <div class="home--header--title">
+				<h1>Voyage 2</h1>
+			</div>
+		      <img src="ressource/desktop2.jpg" />
+		    </li>
+		  </ul>
+		</div>
+	
 	<div class="home--header--list">
+
 		<ul>
 			<li><a href="#">
 				<span class="home--header--date">00/00/00</span>
@@ -133,7 +147,25 @@
 </div>
 <div class="home--testi--contain">
 	<h1>Témoignage</h1>
-	<div>
+	<div class="home--testi--1">
+		<img src="ressource/portrait--testi.png" alt="#portrait du témoignage" title="#portrait du témoignage">
+			<div class="testi--text">
+				<span>Pseudo</span>
+				<span>Voyage</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices lorem sem, vel mole .</p>
+		<a class="mobile" href="#">Lire plus....</a>
+		</div>
+	</div>
+	<div class="home--testi--2">
+		<img src="ressource/portrait--testi.png" alt="#portrait du témoignage" title="#portrait du témoignage">
+			<div class="testi--text">
+				<span>Pseudo</span>
+				<span>Voyage</span>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ultrices lorem sem, vel mole .</p>
+		<a class="mobile" href="#">Lire plus....</a>
+		</div>
+	</div>
+	<div class="home--testi--3">
 		<img src="ressource/portrait--testi.png" alt="#portrait du témoignage" title="#portrait du témoignage">
 			<div class="testi--text">
 				<span>Pseudo</span>

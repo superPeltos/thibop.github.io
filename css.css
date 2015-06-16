@@ -37,11 +37,13 @@ body{
 	    top: 165px;
 	    width:100%;
 	    display:none;
+	    z-index: 10;
 	}
 	nav#menu--main {
 	  width: 49%;
 	  background-color: white;
 	  display: inline-block;
+
 	}
 	.main-mobile{
 	  float: right;
@@ -49,6 +51,7 @@ body{
 	  border: 6px solid #181E4B;
 	  padding: 0px 13px;
 	  color:#181E4B;
+	  z-index:10000;
 	}
 	.main-mobile {
 	  /* float: right; */
@@ -91,12 +94,13 @@ font-family: arial;
 		background:#181E4B;
 		padding:10px;
 	}
+	/*SLIDE*/
 	/*CONTENT*/
 	/*home*/
 	.home--header--contain{
-		background-image:url("ressource/background-header-home-mobile.jpg");
+/*		background-image:url("ressource/background-header-home-mobile.jpg");
 		height:530px;
-	}
+*/	}
 	.home--header--title {
 	  display: inline-block;
 	  position: relative;
@@ -104,6 +108,7 @@ font-family: arial;
 	  width: 100%;
 	  color:white;
 	    text-align: center;
+	    z-index: 20;
 	}
 	.home--header--title h1{
 		margin: 0px 20px;
@@ -195,7 +200,9 @@ font-family: arial;
 		font-transform:uppercase;
 		text-decoration: none;
 	}
+
 	/*display none*/
+	#main--nav p,
 	.home--header--list,
 	.home--voyage--contain ul li a span.home--header--link{
 		display:none;
@@ -257,6 +264,159 @@ font-family: arial;
 	body.body-mobile {
 	  max-width: 680px;
 	   margin: 0px 0px 0px 0px;
+	}
+	
+}
+/* ///////////////////////////////////
+//////////////////////////////////////
+DESKTOP//////////////////////////////
+/////////////////////////////////////*/
+@media screen and (min-width: 680px) {
+/*HEADER*/
+	/*logo*/
+	.logo img {
+	  max-width: 130px;
+	  max-width: 90px;
+	}
+	/*NAV*/
+	/*membre*/
+	nav#menu--member {
+	  float: right;
+	}
+	ul#main--nav li{
+		display: inline-block;
+	}
+	.JS-nomenu h2 {
+	  display: none;
+	}
+	nav#menu--main {
+	  width: 40%;
+	  display: inline-block;
+	}
+	.main--nav--second {
+	  width: 40%;
+	  display: inline-block;
+	}
+	/*VOYAGE TABLEAUX*/
+	.home--voyage--contain h1 {
+		color: white;
+		padding: 12px 0px 0px 50px;
+	}
+	.aboutus--team--contain,
+	.home--voyage--contain {
+  		max-width: 95%;
+  		background: rgb(24, 30, 75);
+  		margin: 0 auto;
+	}
+	.home--voyage--contain ul{
+		padding: 0px;
+		
+	}
+	.home--voyage--contain ul li{
+		list-style-type:none;
+		border-top:1px solid white;
+	}
+	.home--voyage--contain ul li a{
+  		color:white;
+  		border-top:1px white;
+  		text-decoration: none;
+  		margin : 10px 5px;
+  		vertical-align: middle;
+  		height: 100%;
+  		display: block;
+	}
+	.home--voyage--contain ul li a span{
+		font-size:35px;
+	}
+	span.home--header--link {
+	  float: right;
+	  margin-right: 40px;
+	}
+	span.home--header--date {
+	  display: inline-block;
+	  width: 60%;
+	  text-align: center;
+	}
+	/*TESTI*/
+		.home--testi--contain h1{
+			  text-align: left;
+		color:#181E4B;
+		  margin-left: 13px;
+	}
+	.home--testi--contain div img {
+ 	 	display: block;
+ 	 	margin: auto;
+ 	 	margin-top: 60px;
+	}
+	.testi--text::after,
+	.testi--text::before{
+		content:"";
+		position:absolute;
+		font-size: 70px;
+		font-family: sans-serif;
+		color:#7bdbdb;
+
+	}
+	.testi--text::before{
+		background-image: url(ressource/apostrophe_before.jpg);
+		left: -40px;
+  		top: -30px;
+  		  height: 26px;
+  width: 40px;
+	}
+	.testi--text::after{
+	background-image: url(ressource/apostrophe_after.jpg);
+	top: 163px;
+	right: -44px;
+	height: 26px;
+	width: 40px;
+	}
+ 	.testi--text {
+ 		max-width: 55%;
+  		text-align: justify;
+  		margin: auto;
+  		position: relative;
+  		margin-top: 45px;
+ 	}
+	.testi--text span{
+		display: block;
+	}
+	.testi--text a.mobile{
+		color:white;
+		background:#181E4B;
+		padding:5px;
+		font-transform:uppercase;
+		text-decoration: none;
+	}
+		.home--testi--1,
+	.home--testi--2,
+	.home--testi--3 {
+	  display: inline-block;
+	  width:33%;
+	}
+	.home--testi--contain {
+  		text-align: center;
+	}
+	/*FOOTER*/
+	#menu--footer--member{
+		background:#181E4B;
+		margin-top: -16px;
+		text-align: center;
+	}
+	#menu--footer--member li{
+		  display: inline;
+  color: white;
+  text-decoration: none;
+  padding: 10px 200px 10px 0px;
+  list-style: none;
+  font-size: 20px;
+  line-height: 60px;
+  text-transform: uppercase;
+	}
+	/*NONE*/
+	.JS-menu,
+	.JS-nomenu{
+		display: none
 	}
 }
 /*SVG*/
