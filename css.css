@@ -52,9 +52,6 @@ body{
 	  padding: 0px 13px;
 	  color:#181E4B;
 	  z-index:10000;
-	}
-	.main-mobile {
-	  /* float: right; */
 	  text-align: center;
 	  border: 6px solid #181E4B;
 	  padding: 0px 13px;
@@ -95,6 +92,7 @@ font-family: arial;
 		padding:10px;
 	}
 	/*SLIDE*/
+
 	/*CONTENT*/
 	/*home*/
 	.home--header--contain{
@@ -279,6 +277,13 @@ DESKTOP//////////////////////////////
 	  max-width: 90px;
 	}
 	/*NAV*/
+	#main--nav{
+		position: absolute;
+		z-index:100000;
+	}
+	#main--nav p{
+		display: inline-block;
+	}
 	/*membre*/
 	nav#menu--member {
 	  float: right;
@@ -297,6 +302,25 @@ DESKTOP//////////////////////////////
 	  width: 40%;
 	  display: inline-block;
 	}
+	
+	.home--header--list {
+	    z-index: 100000;
+	  display: block;
+	  text-align: center;
+	  display: block;
+	  text-align: center;
+	  width: 72%;
+	}
+	.home--header--list ul li {
+		list-style: none;
+	}
+	.container--slider--txt {
+		 position: absolute;
+		 text-align: center;
+		 width: 13%;
+		 top: 180px;
+	}
+
 	/*VOYAGE TABLEAUX*/
 	.home--voyage--contain h1 {
 		color: white;
@@ -328,14 +352,16 @@ DESKTOP//////////////////////////////
 	.home--voyage--contain ul li a span{
 		font-size:35px;
 	}
+	.home--header--date{
+		width: 65%;
+  		text-align: center;
+	}
 	span.home--header--link {
 	  float: right;
 	  margin-right: 40px;
 	}
 	span.home--header--date {
 	  display: inline-block;
-	  width: 60%;
-	  text-align: center;
 	}
 	/*TESTI*/
 		.home--testi--contain h1{
@@ -414,6 +440,7 @@ DESKTOP//////////////////////////////
   text-transform: uppercase;
 	}
 	/*NONE*/
+	span#JS-main-mobile,
 	.JS-menu,
 	.JS-nomenu{
 		display: none

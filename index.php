@@ -6,56 +6,92 @@
 			<div class="flexslider">
 		  <ul class="slides">
 		    <li>
-		    	<div class="home--header--title">
-				<h1>Voyage 1</h1>
-			</div>
-		      <img src="ressource/desktop.jpg" 
-		      />
+		    	<div class="container--slider--txt">
+			    	<div class="home--header--title">
+						<h1>Voyage 1</h1>
+					</div>
+					<div class="home--header--list">
+						<ul>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+		      <img src="ressource/desktop.jpg" />
 		    </li>
-		    <li>
-		      <div class="home--header--title">
-				<h1>Voyage 2</h1>
-			</div>
+		   		    <li>
+		    	<div class="container--slider--txt">
+			    	<div class="home--header--title">
+						<h1>Voyage 2</h1>
+					</div>
+					<div class="home--header--list">
+						<ul>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+							<li><a href="#">
+								<span class="home--header--date">00/00/00</span>
+								<span class="home--header--link">Réserver</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
 		      <img src="ressource/desktop2.jpg" />
 		    </li>
 		  </ul>
 		</div>
-	
-	<div class="home--header--list">
 
-		<ul>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-			<li><a href="#">
-				<span class="home--header--date">00/00/00</span>
-				<span class="home--header--link">Réserver</span>
-				</a>
-			</li>
-		</ul>
-	</div>
 </div>
 <div class="home--voyage--contain">
 	<h1>Prochains voyages</h1>
