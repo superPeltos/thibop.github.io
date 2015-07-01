@@ -1,7 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*RESET*/
 
 body{
 	font-family: 'Montserrat', sans-serif;
+	margin:0px;
 }
 @media screen and (max-width: 680px) {
 	/*HEADER*/
@@ -32,6 +34,14 @@ body{
 	  line-height: 60px;
 	  color: #181E4B;
 	}
+	#main--nav li p {
+	  background:white;
+	}
+	#main--nav li p:before {
+	  content:"/";
+	  background:#181E4B;
+
+	}
 	.contain--navmobile{
 		position: absolute;
 	    top: 165px;
@@ -45,6 +55,7 @@ body{
 	  display: inline-block;
 
 	}
+
 	.main-mobile{
 	  float: right;
 	  text-align: center;
@@ -55,6 +66,7 @@ body{
 	  text-align: center;
 	  border: 6px solid #181E4B;
 	  padding: 0px 13px;
+	  margin: 10px 20px;
 	  color: #181E4B;
 	  position: absolute;
 	  right: 0px;
@@ -74,8 +86,9 @@ font-family: arial;
   text-transform: uppercase;
 	}
 	/*second*/
-	.contain-second{
-
+	.contain--navsecond--desktop li a{
+		color:#181E4B;
+		text-decoration: none;
 	}
 	.main--nav--second{
 		display: inline-block;
@@ -95,15 +108,12 @@ font-family: arial;
 
 	/*CONTENT*/
 	/*home*/
-	.home--header--contain{
-/*		background-image:url("ressource/background-header-home-mobile.jpg");
-		height:530px;
-*/	}
+
 	.home--header--title {
 	  display: inline-block;
-	  position: relative;
-	  top: 455px;
-	  width: 100%;
+	  position: absolute;
+	  top: 430px;
+	  width: 37.5%;
 	  color:white;
 	    text-align: center;
 	    z-index: 20;
@@ -116,6 +126,7 @@ font-family: arial;
 		display: inline-block;
 	}
 	/*VOYAGE TABLEAUX*/
+
 	.home--voyage--contain h1 {
 		color: white;
 		padding: 12px 0px 0px 50px;
@@ -147,6 +158,7 @@ font-family: arial;
 		display: block;
 		font-size:35px;
 	}
+
 	/*TEMOIGNAGE*/
 	.home--testi--contain h1{
 		color:#181E4B;
@@ -200,6 +212,8 @@ font-family: arial;
 	}
 
 	/*display none*/
+	.home--testi--1,
+	.home--testi--2,
 	#main--nav p,
 	.home--header--list,
 	.home--voyage--contain ul li a span.home--header--link{
@@ -243,6 +257,18 @@ font-family: arial;
 	  padding: 12px 0px 12px 12px;
 	  margin:0px;
 	}
+	/*VOYAGE*/
+	.voyage--header--contain{
+		background-image:url("ressource/desktopvoyage.jpg");
+		height:530px;
+
+	}
+	.voyage--header--title h1{
+		  color: white;
+  position: relative;
+  top: 470px;
+  left: 30%;
+	}
 	/*FOOTER*/
 	#menu--footer--member{
 		background:#181E4B;
@@ -259,12 +285,26 @@ font-family: arial;
 	}
 	  
 	/* CLASSE MOBILE */
+	.flexslider{
+		height: 500px;
+  		overflow: hidden;
+	}
+	.flexslider .slides img {
+	  width: 2060px !important;
+	}
 	body.body-mobile {
 	  max-width: 680px;
 	   margin: 0px 0px 0px 0px;
 	}
-	
+	.flex-direction-nav{
+		display: none;
+	}
 }
+/* ///////////////////////////////////
+//////////////////////////////////////
+Tablettes//////////////////////////////
+/////////////////////////////////////*/
+
 /* ///////////////////////////////////
 //////////////////////////////////////
 DESKTOP//////////////////////////////
@@ -275,21 +315,63 @@ DESKTOP//////////////////////////////
 	.logo img {
 	  max-width: 130px;
 	  max-width: 90px;
+      margin: 20px 20px 0px 20px;
 	}
 	/*NAV*/
 	#main--nav{
 		position: absolute;
 		z-index:100000;
+		color: #181E4B;
+		right: 0px;
 	}
+	#main--nav a{
+		color: #181E4B;
+		text-decoration: none;
+		padding: 10px 30px;
+
+	}
+	#main--nav a,
 	#main--nav p{
 		display: inline-block;
+  		text-transform: uppercase;	
+  		cursor:pointer;
+	}
+	#main--nav p {
+		background: white;
+    	padding: 10px 0px;
+  		margin-right: 55px;
+  		padding-right: 22px;
+	}
+	#main--nav p:before {
+	  content:url("ressource/phone_white_main.png");
+	  background:#181E4B;
+	  padding:12px 13px;
+  	margin-right: 15px;
+	}
+	#main--nav li a:hover,
+	#main--nav li p:hover {
+	border-bottom:3px solid #181E4B;
+	transition-duration:0.2s;
+	background-color: white;
 	}
 	/*membre*/
 	nav#menu--member {
 	  float: right;
+	    margin: 0px 38px;
+	}
+	nav#menu--member ul{
+	  margin-top:30px;
 	}
 	ul#main--nav li{
 		display: inline-block;
+	}
+	#menu--member li {
+	  display: inline;
+	  margin: 0px 50px;
+	}
+	#menu--member li a {
+	  color:#181E4B;
+	  text-decoration: none;
 	}
 	.JS-nomenu h2 {
 	  display: none;
@@ -302,7 +384,23 @@ DESKTOP//////////////////////////////
 	  width: 40%;
 	  display: inline-block;
 	}
-	
+	/*nav second*/
+	.contain--navsecond--desktop{
+		position: absolute;
+		z-index: 10000000;
+		top: 139px;
+		background-color: white;
+	 	padding: 12px 31px;
+	 	right: 40%;
+
+	}
+		.contain--navsecond--desktop li{
+		list-style: none;
+	}
+	.contain--navsecond--desktop li a{
+		color:#181E4B;
+		text-decoration: none;
+	}
 	.home--header--list {
 	    z-index: 100000;
 	  display: block;
@@ -314,41 +412,83 @@ DESKTOP//////////////////////////////
 	.home--header--list ul li {
 		list-style: none;
 	}
+	span.home--header--date,
+	span.home--header--link{
+		width:10%;
+	}
+	.home--header--list ul li a {
+		width: 720px;
+	 	display: inline-block;
+	 	text-align: left;
+	 	position: relative;
+    	left: 18.7%;
+	 	padding: 0px 13px;
+	 	margin: 5px 0px;
+	}
+	.home--header--list ul li a:hover {
+		background-color:#273449;
+		transition-duration:0.5s;
+	}
 	.container--slider--txt {
 		 position: absolute;
 		 text-align: center;
 		 width: 13%;
-		 top: 180px;
+		 top: 260px;
 	}
 
 	/*VOYAGE TABLEAUX*/
+	.voyage--voyage--contain ul li:hover,
+	.home--voyage--contain ul li:hover{
+		background:white !important;
+	}
+	.voyage--voyage--contain ul li:hover span,
+	.home--voyage--contain ul li:hover span{
+		color:#273449;
+	}
+	.voyage--voyage--contain ul li:hover span #Airplane_Flight,
+	.voyage--voyage--contain ul li:hover span #Calendar,
+	.home--voyage--contain ul li:hover span #Calendar,
+	.home--voyage--contain ul li:hover span #Airplane_Flight{
+	fill:#273449;
+	}
+	.voyage--voyage--contain h1,
 	.home--voyage--contain h1 {
 		color: white;
 		padding: 12px 0px 0px 50px;
 	}
+	.voyage--voyage--contain,
 	.aboutus--team--contain,
 	.home--voyage--contain {
   		max-width: 95%;
-  		background: rgb(24, 30, 75);
+  		background: #273449;
   		margin: 0 auto;
+
 	}
+	.aboutus--team--contain{
+		overflow: hidden;
+		height:270px;
+	}
+	.voyage--voyage--contain ul,
 	.home--voyage--contain ul{
 		padding: 0px;
 		
 	}
+	.voyage--voyage--contain ul li,
 	.home--voyage--contain ul li{
 		list-style-type:none;
 		border-top:1px solid white;
 	}
+	.voyage--voyage--contain ul li a,
 	.home--voyage--contain ul li a{
-  		color:white;
-  		border-top:1px white;
-  		text-decoration: none;
-  		margin : 10px 5px;
-  		vertical-align: middle;
-  		height: 100%;
-  		display: block;
+	  color: white;
+	  border-top: 1px white;
+	  text-decoration: none;
+	  padding: 10px 5px;
+	  vertical-align: middle;
+	  height: 100%;
+	  display: block;
 	}
+	.voyage--voyage--contain ul li a span,
 	.home--voyage--contain ul li a span{
 		font-size:35px;
 	}
@@ -356,18 +496,49 @@ DESKTOP//////////////////////////////
 		width: 65%;
   		text-align: center;
 	}
+	.home--header--title h1{
+		font-size: 25px;
+		color:white;
+		border-bottom: 4px solid white;
+  		width: 745px;
+  		margin: 0 auto;
+	}
+	.voyage--header--title h1,
+	span.voyage--header--date,
+	span.voyage--header--link,
+	span.home--header--date,
+	span.home--header--link{
+		color:white;
+		font-size:20px;
+	}
+	span.voyage--header--link,
 	span.home--header--link {
 	  float: right;
 	  margin-right: 40px;
 	}
+	span.voyage--header--date,
 	span.home--header--date {
 	  display: inline-block;
+	}
+
+	.home--voyage--date{
+		display: inline-block;
+		color:white;
+		font-size:20px;
+		width: 65%;
+  		text-align: center;
+	}
+	.home--voyage--link{
+		display: inline-block;
+		color:white;
+		float:right;
+		margin:0px 50px 0px 0px;
 	}
 	/*TESTI*/
 		.home--testi--contain h1{
 			  text-align: left;
 		color:#181E4B;
-		  margin-left: 13px;
+		  margin-left: 50px;
 	}
 	.home--testi--contain div img {
  	 	display: block;
@@ -386,13 +557,13 @@ DESKTOP//////////////////////////////
 	.testi--text::before{
 		background-image: url(ressource/apostrophe_before.jpg);
 		left: -40px;
-  		top: -30px;
+  		top: -40px;
   		  height: 26px;
   width: 40px;
 	}
 	.testi--text::after{
 	background-image: url(ressource/apostrophe_after.jpg);
-	top: 163px;
+	top: 170px;
 	right: -44px;
 	height: 26px;
 	width: 40px;
@@ -402,7 +573,7 @@ DESKTOP//////////////////////////////
   		text-align: justify;
   		margin: auto;
   		position: relative;
-  		margin-top: 45px;
+  		margin-top: 50px;
  	}
 	.testi--text span{
 		display: block;
@@ -414,7 +585,7 @@ DESKTOP//////////////////////////////
 		font-transform:uppercase;
 		text-decoration: none;
 	}
-		.home--testi--1,
+	.home--testi--1,
 	.home--testi--2,
 	.home--testi--3 {
 	  display: inline-block;
@@ -422,8 +593,102 @@ DESKTOP//////////////////////////////
 	}
 	.home--testi--contain {
   		text-align: center;
+  		  height: 525px;
 	}
+	/*VOYAGE*/
+	.voyage--presentation--contain{
+		max-width: 95%;
+  		margin: 0 auto;
+	}
+	.voyage--header--contain{
+		background-image:url("ressource/desktopvoyage.jpg");
+		height:470px;
+		text-align: center;
+	}
+
+	.voyage--header--title h1{
+		color:white;
+		position: relative;
+  		top: 415px;
+
+	}
+	.home--header--title {
+  position: relative;
+  
+}
+	/*PRESENTATION*/
+	.aboutus--header--title h1{
+		  position: relative;
+  top: 410px;
+  color:white;
+	}
+	.aboutus--header--contain {
+	background-image:url("ressource/desktop2.jpg");
+		height:470px;
+		text-align: center;	
+	}
+	.aboutus--team--txt,
+	.aboutus--team--img{
+		width:49.8%;
+		display:inline-block;
+		vertical-align: top;
+	}
+	.aboutus--team--img img{
+		position:relative;
+		top:-90px;
+	}
+	.aboutus--team--txt h1{
+		  font-size: 25px;
+  		margin: 21px 0px 0px 45px;
+  		color: white;
+	}
+	.aboutus--team--txt p{
+		  font-size: 25px;
+		  margin: 50px 44px 40px 45px;
+		  text-align: justify;
+		  color: white;
+	}
+	.aboutus--team--img img{
+		width:100%;
+	}
+	.aboutus--team--img{
+  overflow: hidden;
+  height: 392px;
+	}
+	.aboutus--presentation--contain{
+		  font-size: 25px;
+  margin: 50px 44px 40px 45px;
+  text-align: justify;
+	}
+	.aboutus--contain--engagement {
+  width: 20%;
+  display: inline-block;
+  margin: 20px 110px;
+  background-color: rgb(39, 52, 73);
+  text-align: center;
+	}
+	.aboutus--contain--engagement p{
+	  color: white;
+	  text-transform: uppercase;
+	  font-size: 25px;
+	}
+	.home--engagement--contain h1{
+		color:#181E4B;
+		  margin-left: 13px;
+	}
+	.home--engagement--contain div img {
+ 	 	display: block;
+ 	 	margin: auto;
+ 	 	margin-top: 60px;
+	}
+	.home--engagement--contain {
+  width: 95%;
+  margin: 0 auto;
+}
 	/*FOOTER*/
+	#menu--footer--member ul{
+		margin:0px;
+	}
 	#menu--footer--member{
 		background:#181E4B;
 		margin-top: -16px;
@@ -445,8 +710,13 @@ DESKTOP//////////////////////////////
 	.JS-nomenu{
 		display: none
 	}
+	/*SLIDE*/
+	.flexslider{
+		border:none !important;
+	}
 }
 /*SVG*/
+.voyage--voyage--contain ul li a span.contain-picto-svg,
 .home--voyage--contain ul li a span.contain-picto-svg{
 	display: inline-block;
 	width:35px;
@@ -454,7 +724,7 @@ DESKTOP//////////////////////////////
 }
 #Calendar,
 #Airplane_Flight{
-	fill:#7bdbdb;
+	fill:white;
 }
 /*UTILITY*/
 .clear {
@@ -465,13 +735,14 @@ DESKTOP//////////////////////////////
 .home--social--contain{
 	background:#7BDBDA;
 	margin:45px 0px 0px 0px;
-	padding:25px 0px 25px 0px;
+  	padding: 35px 0px 35px 0px;
 }
 .home--social--contain div{
 	text-align: center;
 }
 .home--social--contain div img{
 	display: inline-block;
-	margin:0px 25px 0px 25px;
-	  height: 50px;
+	margin: 0px 105px 0px 105px;
+	  height: 35px;
+
 }

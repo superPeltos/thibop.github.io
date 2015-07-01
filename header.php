@@ -35,7 +35,7 @@
 					<li><a href="">Apéritifs</a></li>
 					<li><a href="">Actualité</a></li>
 					<li><a href="">Contact</a></li>
-					<p>0(+33) 3 88 88 88 <p>
+					<p>0(+33) 3 88 88 88 </p>
 				</ul>
 			</nav>
 
@@ -43,14 +43,14 @@
 				<div class="JS-nomenu">
 					<h2>Résevation</h2>
 					<img src="ressource/phone_white.png" alt="picto telephone">
-					<p>0(+33) 3 88 88 88 <p>
+					<p>0(+33) 3 88 88 88 </p>
 					<a>Formulaire de reservation</a>
 				</div>
 				<div class="JS-menu">
-					<ul class="">
-						<li>Présentation</li>
-						<li>Équipe</li>
-						<li>Engagement</li>
+					<ul class="contain--navsecond--desktop">
+						<li><a href="presentation.php">Présentation</a></li>
+						<li><a>Équipe</a></li>
+						<li><a>Engagement</a></li>
 					</ul>
 				</div>
 			</div>

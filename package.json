@@ -17,7 +17,12 @@
   "homepage": "https://github.com/thibop/Lpatc#readme",
   "description": "",
   "dependencies": {
+    "gulp": "^3.9.0",
     "jquery": "^2.1.4",
     "jquery-ui": "^1.10.5"
+  },
+  "devDependencies": {
+    "gulp-sass": "^2.0.2",
+    "gulp-sourcemaps": "^1.5.2"
   }
 }
